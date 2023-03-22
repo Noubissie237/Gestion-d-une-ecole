@@ -1,0 +1,25 @@
+#edit
+{
+	border: 1px solid #008374;
+	color:#FFF;
+	background-color: #008374;
+	width:80px;
+}
+
+#delete
+{
+	border: 1px solid #FF2510;
+	color:#FFF;
+	background-color: #FF2510;
+	width:80px;
+}
+
+#delete:hover
+{
+	color:#000;
+}
+
+#edit:hover
+{
+	color:#000;
+}

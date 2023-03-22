@@ -5,10 +5,10 @@ define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'school');
 
-/* Connexion à la base de données */
+/* Connexion to owr dataBase */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-/* verifier connection */
+/* check connection */
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }

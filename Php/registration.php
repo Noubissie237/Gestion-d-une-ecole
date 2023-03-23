@@ -79,7 +79,7 @@
                                 }
 
 
-								header('Location:../Impact/Principal.html');
+								header('Location:Principal.php');
 							}
 	                    header('acceuil.php');
 					}

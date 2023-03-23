@@ -185,15 +185,3 @@ require_once "config.php";
 </body>
 
 </html>
-<!--<script>
-  let a
-  function f()
-  {
-    a = parseInt(prompt("Please confirm the id teacher's to delete"))
-    g();
-  }
-   function g()
-   {
-    return a
-   }
-</script>

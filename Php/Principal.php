@@ -10,25 +10,19 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../Impact/assets/img/favicon.png" rel="icon">
+  <link href="../Impact/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../Impact/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../Impact/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../Impact/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../Impact/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../Impact/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="../Impact/assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Impact - v1.2.0
-  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -38,7 +32,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">tchambabaurel42@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+237 655 57 99</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+237 655 579 911</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -53,8 +47,7 @@
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+
         <h1>Home<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
@@ -117,13 +110,13 @@
             <article>
               
               <div class="post-img">
-                <a href="../Php/teachers.php"><img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid"></a>
+                <a href="teachers.php"><img src="../Impact/assets/img/blog/blog-1.jpg" alt="" class="img-fluid"></a>
               </div>
 
             
 
               <h2 class="title">
-                <a href="../Php/teachers.php">Teachers</a>
+                <a href="teachers.php">Teachers</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -139,13 +132,13 @@
             <article>
 
               <div class="post-img">
-                <a href="../Php/students.php"><img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid"></a>
+                <a href="students.php"><img src="../Impact/assets/img/blog/blog-3.jpg" alt="" class="img-fluid"></a>
               </div>
 
             
 
               <h2 class="title">
-                <a href="../Php/students.php">Students</a>
+                <a href="students.php">Students</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -195,16 +188,16 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="../Impact/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../Impact/assets/vendor/aos/aos.js"></script>
+  <script src="../Impact/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../Impact/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../Impact/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../Impact/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../Impact/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="../Impact/assets/js/main.js"></script>
 
 </body>
 

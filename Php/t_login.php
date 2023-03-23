@@ -10,7 +10,7 @@
 		$select = $connexion->query("SELECT * FROM teacher WHERE (Pseudo = '$pseu' AND Pwd = '$pass')");
 		if($select->rowCount() > 0 ){
 			$_SESSION['auth']=$select->fetch();
-			header('Location:../Impact/index.html');	
+			header('Location:HomeTeachers.php');	
 	}
 	}
 ?>

@@ -52,6 +52,8 @@
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="index.php" class="logOut"><i class="bi bi-box-arrow-left" title="Log Out" ></i></i></a>
+
       </div>
     </div>
   </section><!-- End Top Bar -->
@@ -65,14 +67,10 @@
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2>All Teachers</h2>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-          <a class="btn btn-outline-light" href='home.php'>
-            LOGOUT
-          </a>
-        </div>
+
         <div class="col-lg-6 order-1 order-lg-2">
           <a class="btn btn-outline-light" href='t_registration.php'>
-            Create New Teachers
+          <span class="bi bi-person-plus">  Create New Teachers </span>
           </a>
         </div>
       </div>

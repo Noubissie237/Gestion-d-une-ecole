@@ -7,10 +7,10 @@
 
 		$pass = sha1($_POST['pass']);
 		$pseu = $_POST['pseudo'];
-		$select = $connexion->query("SELECT * FROM principal WHERE (Pseudo = '$pseu' AND Pwd = '$pass')");
+		$select = $connexion->query("SELECT * FROM headmaster WHERE (Pseudo = '$pseu' AND Pwd = '$pass')");
 		if($select->rowCount() > 0 ){
 			$_SESSION['auth']=$select->fetch();
-			header('Location:../../Prog/Impact/Principal.html');	
+			header('Location: Principal.php');	
 	}
 	}
 ?>

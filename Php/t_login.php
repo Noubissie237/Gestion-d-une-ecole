@@ -1,7 +1,6 @@
 <?php 
-	$auth = 0;
-  include "db.php"; 
-  include "auth.php"; 
+	session_start();
+  	include "db.php"; 
 
 	if(isset($_POST['pseudo']) && isset($_POST['pass'])){
 
@@ -9,7 +8,11 @@
 		$pseu = $_POST['pseudo'];
 		$select = $connexion->query("SELECT * FROM teacher WHERE (Pseudo = '$pseu' AND Pwd = '$pass')");
 		if($select->rowCount() > 0 ){
-			$_SESSION['auth']=$select->fetch();
+			$select->execute();
+			$tmp = $select->fetchAll();
+
+			foreach($tmp as $idTmp)
+				$_SESSION['idTeach'] = $idTmp['Id'];
 			header('Location:HomeTeachers.php');	
 	}
 	}

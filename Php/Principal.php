@@ -39,6 +39,8 @@
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="index.php" class="logOut"><i class="bi bi-box-arrow-left" title="Log Out" ></i></i></a>
+
       </div>
     </div>
   </section><!-- End Top Bar -->

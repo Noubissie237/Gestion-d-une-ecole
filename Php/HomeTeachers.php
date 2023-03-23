@@ -39,6 +39,8 @@
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="index.php" class="logOut"><i class="bi bi-box-arrow-left" title="Log Out" ></i></i></a>
+
       </div>
     </div>
   </section><!-- End Top Bar -->
@@ -54,19 +56,18 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Classes</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Form 1</a></li>
+          <li class="dropdown"><a href="#"><span>Add Notes</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul id="class">
+              <li><a href="studentsNote.php?id=1">Form 1</a></li>
               </li>
-              <li><a href="#">Form 2</a></li>
-              <li><a href="#">Form 3</a></li>
-              <li><a href="#">Form 4</a></li>
-              <li><a href="#">Form 5</a></li>
-              <li><a href="#">Lower Sixth Science</a></li>
-              <li><a href="#">Lower Sixth Art</a></li>
-              <li><a href="#">Upper Sixth Science</a></li>
-              <li><a href="#">Upper Sixth Art</a></li>
-            
+              <li><a href="studentsNote.php?id=2">Form 2</a></li>
+              <li><a href="studentsNote.php?id=3">Form 3</a></li>
+              <li><a href="studentsNote.php?id=4">Form 4</a></li>
+              <li><a href="studentsNote.php?id=5">Form 5</a></li>
+              <li><a href="studentsNote.php?id=6">Lower Sixth Science</a></li>
+              <li><a href="studentsNote.php?id=7">Lower Sixth Art</a></li>
+              <li><a href="studentsNote.php?id=8">Upper Sixth Science</a></li>
+              <li><a href="studentsNote.php?id=9">Upper Sixth Art</a></li>
             </ul>
           </li>
          

@@ -5,8 +5,42 @@
 
   $marks = [];
 
+  $ctrl = 0;
+  $sum = 0;
+  $nbre = 0;
   foreach($req1 as $mrks)
-    array_push($marks, $mrks['Mark']);
+  {
+    $sum += $mrks['Mark'];
+    $ctrl += 1;
+    if($ctrl == 60)
+    {
+      $avr = $sum / 60;
+      array_push($marks, $avr);
+      $ctrl = 0;
+      $sum = 0;
+      $nbre += 1;
+    }
+
+  }
+
+  $ArrSum = array_sum($marks);
+  $FinalAvr = $ArrSum / $nbre;
+
+  $succ = 0;
+  $fail = 0;
+
+  foreach($marks as $unik)
+  {
+    if($unik >= 10)
+      $succ += 1;
+    else
+      $fail += 1;
+  }
+
+  $S1 = ($succ / $nbre) * 100;
+  $S = (int)$S1;
+  $F1 = ($fail / $nbre) * 100;
+  $F = (int)$F1;
 
 
 ?>
@@ -114,9 +148,9 @@
     
                   <path class="around" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 
-                  <path class="percent" stroke-dasharray="70, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                  <path class="percent" stroke-dasharray="<?= $S; ?>, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 
-                  <text x="18" y="14" text-anchor="middle" dy="7" font-size="20">70%</text>
+                  <text x="18" y="14" text-anchor="middle" dy="7" font-size="20"><?= $S; ?>%</text>
     
               </svg>              
             </div>
@@ -143,9 +177,9 @@
     
                   <path class="around" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 
-                  <path class="percent" stroke-dasharray="30, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                  <path class="percent" stroke-dasharray="<?= $F; ?>, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 
-                  <text x="18" y="14" text-anchor="middle" dy="7" font-size="20">30%</text>
+                  <text x="18" y="14" text-anchor="middle" dy="7" font-size="20"><?= $F; ?>%</text>
     
               </svg>              
             </div>

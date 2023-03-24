@@ -1,35 +1,22 @@
 <?php
-/* confirmer */
-if(isset($_POST["id"]) && !empty($_POST["id"])){
-    /* Inclure le fichier config */
-    require_once "config.php";
-    
-    $sql = "DELETE FROM student WHERE Id = ?";
-    
-    if($stmt = mysqli_prepare($link, $sql)){
-        mysqli_stmt_bind_param($stmt, "i", $param_id);
-        
-        $param_id = trim($_POST["id"]);
-        
-        if(mysqli_stmt_execute($stmt)){
-            /* supprimé, retourne */
-            header("location: students.php");
+    include "db.php";
+
+    if(isset($_POST["id"]) && !empty($_POST["id"])){
+
+        $pff = $_POST['id'];
+
+        $req1 = $connexion->query("DELETE FROM student WHERE Id = '$pff'");
+        $req2 = $connexion->query("DELETE FROM score WHERE Id_student = '$pff'");
+
+        header("location: students.php");
+        exit();       
+
+    } else{
+        if(empty(trim($_GET["id"]))){
+            header("location: S_error.php");
             exit();
-        } else{
-            echo "Oops! An error has occurred.";
         }
     }
-     
-    mysqli_stmt_close($stmt);
-    
-    mysqli_close($link);
-} else{
-    /* verifier si paramettre id exite */
-    if(empty(trim($_GET["id"]))){
-        header("location: S_error.php");
-        exit();
-    }
-}
 ?>
 
 

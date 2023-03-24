@@ -115,8 +115,6 @@
                 <a href="teachers.php"><img src="../Impact/assets/img/blog/blog-1.jpg" alt="" class="img-fluid"></a>
               </div>
 
-            
-
               <h2 class="title">
                 <a href="teachers.php">Teachers</a>
               </h2>
@@ -137,10 +135,27 @@
                 <a href="students.php"><img src="../Impact/assets/img/blog/blog-3.jpg" alt="" class="img-fluid"></a>
               </div>
 
-            
-
               <h2 class="title">
                 <a href="students.php">Students</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <div class="post-meta">
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <article>
+
+              <div class="post-img">
+                <a href="Stat.php"><img src="../Img/Stat.jpeg" alt="" class="img-fluid"></a>
+              </div>
+
+              <h2 class="title">
+                <a href="Stat.php">Global Percentage%</a>
               </h2>
 
               <div class="d-flex align-items-center">

@@ -60,7 +60,7 @@
             }else{
                 $select = $connexion -> prepare("INSERT INTO teacher(Id, Pseudo, Last_Name, First_Name, Gender, Subjects, Birthday, Pwd) VALUES(NULL, '$pseu', '$lname', '$fname', '$gender', '$subjects', '$hbd', SHA1('$spass')) ");
                 $select -> execute();
-                header('Location:http://localhost/Prog/Impact/Principal.html');
+                header('Location:Principal.php');
             }
 
         }

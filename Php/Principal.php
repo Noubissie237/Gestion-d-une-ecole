@@ -55,21 +55,6 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Classes</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Form 1</a></li>
-              </li>
-              <li><a href="#">Form 2</a></li>
-              <li><a href="#">Form 3</a></li>
-              <li><a href="#">Form 4</a></li>
-              <li><a href="#">Form 5</a></li>
-              <li><a href="#">Lower Sixth Art</a></li>
-              <li><a href="#">Lower Sixth Science</a></li>
-              <li><a href="#">Upper Sixth Art</a></li>
-              <li><a href="#">Upper Sixth Science</a></li>
-            
-            </ul>
-          </li>
         </ul>
       </nav><!-- .navbar -->
 

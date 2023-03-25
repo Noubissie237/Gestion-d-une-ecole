@@ -45,10 +45,7 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+          <li><a href="#">Home</a></li>
       </nav>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

@@ -1,25 +1,42 @@
 <?php
+  session_start();
   include "db.php";
 
+  $tea = $_SESSION['idTeach'];
+
   $req1 = $connexion->query("SELECT * FROM score");
+  $req2 = $connexion->query("SELECT * FROM teacher WHERE Id='$tea' ");
+
+
+  foreach($req2 as $su)
+    $sub = $su['Subjects'];
+
+  $tmp = "Name";
+  $req3 = $connexion->query("SELECT * FROM subjects WHERE $tmp='$sub'");
+  foreach($req3 as $w)
+  {
+    $m = $w['Id'];
+  }
+
+  $req4 = $connexion->query("SELECT * FROM score WHERE Id_subject='$m' ");
 
   $marks = [];
 
   $ctrl = 0;
   $sum = 0;
   $nbre = 0;
-  foreach($req1 as $mrks)
+  foreach($req4 as $mrks)  
   {
-    $sum += $mrks['Mark'];
-    $ctrl += 1;
-    if($ctrl == 60)
-    {
-      $avr = $sum / 60;
-      array_push($marks, $avr);
-      $ctrl = 0;
-      $sum = 0;
-      $nbre += 1;
-    }
+      $sum += $mrks['Mark'];
+      $ctrl += 1;
+      if($ctrl == 60)
+      {
+        $avr = $sum / 60;
+        array_push($marks, $avr);
+        $ctrl = 0;
+        $sum = 0;
+        $nbre += 1;
+      }
 
   }
 
@@ -119,8 +136,8 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Global percentage center >>></h2>
-          <p>Here, you can View success percentage and failure percentage</p>
+          <h2>Percentage Center>>></h2>
+          <p>Here, you can View success percentage and failure percentage of <?= $sub; ?> course</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
 
           </div>

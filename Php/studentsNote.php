@@ -17,7 +17,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Principal</title>
+  <title>Student's Note</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <script></script>
@@ -109,13 +109,13 @@ require_once "config.php";
                       break;
                       case 5 : $sql = "SELECT * FROM student WHERE Levels = 'From 5'";
                       break;
-                      case 6 : $sql = "SELECT * FROM student WHERE Levels = 'Lower Sixth Science'";
+                      case 6 : $sql = "SELECT * FROM student WHERE Levels = 'Lowersixth Science'";
                       break;
-                      case 7 : $sql = "SELECT * FROM student WHERE Levels = 'Lower Sixth Art'";
+                      case 7 : $sql = "SELECT * FROM student WHERE Levels = 'Lowersixth Art'";
                       break;
-                      case 8 : $sql = "SELECT * FROM student WHERE Levels = 'Upper Sixth Science'";
+                      case 8 : $sql = "SELECT * FROM student WHERE Levels = 'Uppersixth Science'";
                       break;
-                      case 9 : $sql = "SELECT * FROM student WHERE Levels = 'Upper Sixth Art'";
+                      case 9 : $sql = "SELECT * FROM student WHERE Levels = 'Uppersixth Art'";
                       break;
                       default: break;
                     }

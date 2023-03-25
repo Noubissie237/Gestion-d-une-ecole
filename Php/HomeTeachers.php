@@ -48,7 +48,7 @@
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Home<span>.</span></h1>
@@ -106,39 +106,17 @@
 
         <div class="row gy-4">
 
-          
           <div class="col-xl-4 col-md-6">
             <article>
 
               <div class="post-img">
-                <img src="../Impact/assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-              </div>
-
-
-              <h2 class="title">
-                <a href="#">Statistics</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <div class="post-meta">
-              
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="../Impact/assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                <a href="NStat.php"><img src="../Impact/assets/img/blog/blog-3.jpg" alt="" class="img-fluid"></a>
               </div>
 
             
 
               <h2 class="title">
-                <a href="#">Percentage %</a>
+                <a href="NStat.php">Percentage %</a>
               </h2>
 
               <div class="d-flex align-items-center">

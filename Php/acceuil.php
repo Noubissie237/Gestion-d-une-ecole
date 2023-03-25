@@ -532,3 +532,6 @@
                 echo "<span style=\"color:red\">FAILED</span>";
               ?> 
 </pre>
+
+<!DOCTYPE html><head><title>Student</title></head><body style="background-color:RGBa(45, 96, 221, 0.2)"></body></html>
+

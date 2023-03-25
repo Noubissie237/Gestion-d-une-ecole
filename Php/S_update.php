@@ -143,23 +143,23 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                 <div class="col-md-12">
                     <h2 class="mt-5">Edit record</h2>
                     <p>Edit the fields and save</p>
-                    <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
+                    <form action="<?= htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" name="Lname" class="form-control <?php echo (!empty($name_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $Lname; ?>">
-                            <span class="invalid-feedback"><?php echo $name_err;?></span>
+                            <input type="text" name="Lname" class="form-control <?= (!empty($name_err)) ? 'is-invalid' : ''; ?>" value="<?= $Lname; ?>">
+                            <span class="invalid-feedback"><?= $name_err;?></span>
                         </div>
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" name="Fname" class="form-control <?php echo (!empty($Fname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $Fname; ?>">
-                            <span class="invalid-feedback"><?php echo $Fname_err;?></span>
+                            <input type="text" name="Fname" class="form-control <?= (!empty($Fname_err)) ? 'is-invalid' : ''; ?>" value="<?= $Fname; ?>">
+                            <span class="invalid-feedback"><?= $Fname_err;?></span>
                         </div>
                         <div class="form-group">
                             <label>Gender</label>
-                            <input type="text" name="Gender" class="form-control <?php echo (!empty($Gender_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $Gender; ?>">
-                            <span class="invalid-feedback"><?php echo $Gender_err;?></span>
+                            <input type="text" name="Gender" class="form-control <?= (!empty($Gender_err)) ? 'is-invalid' : ''; ?>" value="<?= $Gender; ?>">
+                            <span class="invalid-feedback"><?= $Gender_err;?></span>
                         </div>
-                        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
+                        <input type="hidden" name="id" value="<?= $id; ?>"/>
                         <input type="submit" class="btn btn-primary" value="Save">
                         <a href="teachers.php" class="btn btn-secondary ml-2">Cancel</a>
                     </form>

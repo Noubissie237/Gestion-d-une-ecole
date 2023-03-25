@@ -87,7 +87,7 @@
 require_once "config.php";
                     
                     /* select query execution */
-                    $sql = "SELECT * FROM student";
+                    $sql = "SELECT * FROM student ORDER BY Levels ASC";
                     
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){

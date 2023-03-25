@@ -38,9 +38,9 @@
   }
 
   $S1 = ($succ / $nbre) * 100;
-  $S = (int)$S1;
+  $S = round($S1,0);
   $F1 = ($fail / $nbre) * 100;
-  $F = (int)$F1;
+  $F = round($F1,0);
 
 
 ?>

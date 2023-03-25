@@ -1,3 +1,15 @@
+<?php
+  session_start();
+  include "db.php";
+
+  $idT = $_SESSION['idTeach'];
+
+  $req = $connexion->query("SELECT * FROM teacher WHERE Id = '$idT'");
+  foreach($req as $r)
+    $subject = $r['Subjects'];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,6 +65,7 @@
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Home<span>.</span></h1>
       </a>
+      <h1 style="color:RGBa(25,200,15,0.3)"><strong><?= $subject." Center"; ?></strong></h1>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Home</a></li>

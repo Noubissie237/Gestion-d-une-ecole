@@ -96,8 +96,8 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     
                     /* recupere les champs */
-                    $Lname = $row["Lname"];
-                    $Fname = $row["Fname"];
+                    $Lname = $row["Last_Name"];
+                    $Fname = $row["First_Name"];
                     $Gender = $row["Gender"];
                 } else{
                     
@@ -151,7 +151,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                         </div>
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" name="Fname" class="form-control <?php echo (!empty($Fname_err)) ? 'is-invalid' : ''; ?>"><?php echo $Fname; ?>
+                            <input type="text" name="Fname" class="form-control <?php echo (!empty($Fname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $Fname; ?>">
                             <span class="invalid-feedback"><?php echo $Fname_err;?></span>
                         </div>
                         <div class="form-group">
